@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>صفحة التحكم </title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/png" href="img/logo-2.png" />
+
+    <!-- Import lib -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo|Oswald&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/iziModal.min.css">
+    <link rel="stylesheet" type="text/css" href="css/iziToast.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style-control.css">
+    <!-- End import lib -->
+
+    <meta name="csrf-token" content="LMOlkNSmKj6ON9bqHvrowWcIBysiHZkNDOokmNIb">
+</head>
+
+<body class="overlay-scrollbar">
+    <!-- navbar -->
+    <div class="navbar">
+        <!-- nav left -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link">
+                    <i class="fas fa-bars" onclick="collapseSidebar()"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html"><img src="img/logo-2.png" alt="ATPro logo" class="logo logo-light"></a>
+            </li>
+        </ul>
+        <!-- end nav left -->
+
+        <!-- form -->
+        <form class="navbar-search">
+
+        </form>
+        <!-- end form -->
+        <!-- nav right -->
+        <ul class="navbar-nav nav-right">
+            <li class="nav-item dropdown">
+                <a class="nav-link">
+                    <i class="fas fa-bell dropdown-toggle" data-toggle="notification-menu"></i>
+                    <span id="notiAlert" class="navbar-badge">1</span>
+
+                </a>
+                <ul id="notification-menu" class="dropdown-menu notification-menu" style="height: 500px;">
+                    <div class="dropdown-menu-header">
+                        <span>
+							الإشعارات
+						</span>
+                    </div>
+                    <div class="dropdown-menu-content overlay-scrollbar scrollbar-hover">
+
+
+                        <li data-noti_id="11" class="dropdown-menu-item seeStatus  active ">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>
+									يتم الان تجهيز طلبك تحت الرقم : 2
+									<br>
+									<span>
+										2020-12-31 20:01:35
+									</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li data-noti_id="10" class="dropdown-menu-item seeStatus   ">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>
+									تم تفعيل وتنشيط حسابك بنجاح
+									<br>
+									<span>
+										2020-12-31 20:00:46
+									</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li data-noti_id="9" class="dropdown-menu-item seeStatus   ">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>
+									تم الغاء تفعيل حسابك الرجاء مراسله الاداره
+									<br>
+									<span>
+										2020-12-30 23:36:59
+									</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li data-noti_id="8" class="dropdown-menu-item seeStatus   ">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>
+									تم تفعيل وتنشيط حسابك بنجاح
+									<br>
+									<span>
+										2020-12-30 23:35:37
+									</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li data-noti_id="7" class="dropdown-menu-item seeStatus   ">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>
+									تم الغاء تفعيل حسابك الرجاء مراسله الاداره
+									<br>
+									<span>
+										2020-12-30 23:33:36
+									</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li data-noti_id="6" class="dropdown-menu-item seeStatus   ">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>
+									تم تفعيل وتنشيط حسابك بنجاح
+									<br>
+									<span>
+										2020-12-30 23:32:57
+									</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li data-noti_id="5" class="dropdown-menu-item seeStatus   ">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>
+									تم الغاء تفعيل حسابك الرجاء مراسله الاداره
+									<br>
+									<span>
+										2020-12-30 23:25:36
+									</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li data-noti_id="3" class="dropdown-menu-item seeStatus   ">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>
+									تم تفعيل وتنشيط حسابك بنجاح
+									<br>
+									<span>
+										2020-12-30 23:12:27
+									</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li data-noti_id="2" class="dropdown-menu-item seeStatus   ">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>
+									تم الغاء تفعيل حسابك الرجاء مراسله الاداره
+									<br>
+									<span>
+										2020-12-30 23:11:55
+									</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li data-noti_id="1" class="dropdown-menu-item seeStatus   ">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>
+									يتم الان تجهيز طلبك تحت الرقم : 1
+									<br>
+									<span>
+										2020-12-30 20:47:15
+									</span>
+                                </span>
+                            </a>
+                        </li>
+
+                    </div>
+                    <div class="dropdown-menu-footer">
+                        <form action="/dashboard/clearnoti" method="post">
+                            <input type="hidden" name="_token" value="LMOlkNSmKj6ON9bqHvrowWcIBysiHZkNDOokmNIb"> <input type="submit" class="btn-base btn-danger" value="الكل كمقروء">
+                        </form>
+
+                    </div>
+                </ul>
+            </li>
+            <li class="nav-item avt-wrapper">
+                <div class="avt dropdown">
+                    <img src="img/user_photo.jpg" alt="User image" class="dropdown-toggle" data-toggle="user-menu">
+                    <ul id="user-menu" class="dropdown-menu">
+                        <li class="dropdown-menu-item">
+                            <a class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <span> admin</span>
+                            </a>
+                        </li>
+
+
+                        <li class="dropdown-menu-item">
+                            <form method="POST" action="http://127.0.0.1:8000/logout">
+                                <input type="hidden" name="_token" value="LMOlkNSmKj6ON9bqHvrowWcIBysiHZkNDOokmNIb">
+                                <!-- <a href="logout" class="dropdown-menu-link"> -->
+                                <a class="dropdown-menu-link" href="http://127.0.0.1:8000/logout" onclick="event.preventDefault(); this.closest('form').submit();">
+                            </form>
+                            <div>
+                                <i class="fas fa-sign-out-alt"></i>
+                            </div>
+                            <span>خروج</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- end nav right -->
+    </div>
+    <!-- end navbar -->
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <ul class="sidebar-nav">
+            <li class="sidebar-nav-item">
+                <a href="" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <span>
+				الرئيسيه
+					</span>
+                </a>
+            </li>
+
+            <li class="sidebar-nav-item">
+                <a href="dashboard/users" class="sidebar-nav-link ">
+                    <div>
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <span>ادارة المستخدمين</span>
+                </a>
+            </li>
+
+            <li class="sidebar-nav-item">
+                <a href="dashboard/manage-orders" class="sidebar-nav-link ">
+                    <div>
+                        <i class="fas fa-list"></i>
+                    </div>
+                    <span>ادارة الطلبات</span>
+                </a>
+            </li>
+
+
+
+            <li class="sidebar-nav-item">
+                <a href="dashboard/seller/dresses" class="sidebar-nav-link active">
+                    <div>
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <span>الفساتين</span>
+                </a>
+            </li>
+
+            <li class="sidebar-nav-item">
+                <a href="dashboard/myorders" class="sidebar-nav-link ">
+                    <div>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <span> طلباتي </span>
+                </a>
+            </li>
+
+            <li class="sidebar-nav-item">
+                <a href="dashboard/receivied-orders" class="sidebar-nav-link ">
+                    <div>
+                        <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <span> تم الشراء </span>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+    <!-- end sidebar -->
+
+    <!-- main content -->
+    <div class="wrapper">
+
+        <style>
+            .abs,
+            h2:after,
+            .cards .card figcaption,
+            .cards .card:after,
+            .news .card figcaption,
+            .news .card:after,
+            .news .article figcaption {
+                position: absolute;
+            }
+            
+            .rel,
+            h2,
+            h2 strong,
+            .cards .card,
+            .news .card,
+            .news .article {
+                position: relative;
+            }
+            
+            .fix {
+                position: fixed;
+            }
+            
+            .dfix {
+                display: inline;
+            }
+            
+            .dib {
+                display: inline-block;
+            }
+            
+            .db {
+                display: block;
+            }
+            
+            .dn {
+                display: none;
+            }
+            
+            .df,
+            .cards,
+            .news {
+                display: flex;
+            }
+            
+            .dif {
+                display: inline-flex;
+            }
+            
+            .dg {
+                display: grid;
+            }
+            
+            .dig {
+                display: inline-grid;
+            }
+            
+            .vm,
+            h2,
+            h2 strong,
+            h2 span {
+                vertical-align: middle;
+            }
+            
+            body {
+                background: #24282f;
+                font-family: 'Alegreya Sans';
+            }
+            
+            .wrapper {
+                padding: 15px;
+            }
+            
+            h2 {
+                padding: 10px;
+                padding-left: 25px;
+                color: #ccc;
+                margin: 0;
+            }
+            
+            h2 strong {
+                z-index: 2;
+                background: #24282f;
+                padding: 4px 8px;
+            }
+            
+            h2 span {
+                font-size: 0.7em;
+                color: #aaa;
+                margin-left: 10px;
+            }
+            
+            h2:after {
+                content: '';
+                z-index: 1;
+                bottom: 50%;
+                margin-bottom: -2px;
+                height: 2px;
+                left: 0;
+                right: 0;
+                background: #373d47;
+            }
+            
+            .cards,
+            .news {
+                flex-flow: row wrap;
+            }
+            
+            .cards .card,
+            .news .card {
+                margin: 20px;
+                width: 180px;
+                height: 270px;
+                overflow: hidden;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+                transform-origin: center top;
+                transform-style: preserve-3d;
+                transform: translateZ(0);
+                transition: 0.3s;
+            }
+            
+            .cards .card img,
+            .news .card img {
+                width: 100%;
+                min-height: 100%;
+            }
+            
+            .cards .card figcaption,
+            .news .card figcaption {
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 20px;
+                padding-bottom: 10px;
+                font-size: 20px;
+                background: none;
+                color: #fff;
+                transform: translateY(100%);
+                transition: 0.3s;
+            }
+            
+            .cards .card:after,
+            .news .card:after {
+                content: '';
+                z-index: 10;
+                width: 200%;
+                height: 100%;
+                top: -90%;
+                left: -20px;
+                opacity: 0.1;
+                transform: rotate(45deg);
+                background: linear-gradient(to top, transparent, #fff 15%, rgba(255, 255, 255, 0.5));
+                transition: 0.3s;
+            }
+            
+            .cards .card:hover,
+            .news .card:hover,
+            .cards .card:focus,
+            .news .card:focus,
+            .cards .card:active,
+            .news .card:active {
+                box-shadow: 0 8px 16px 3px rgba(0, 0, 0, 0.6);
+                transform: translateY(-3px) scale(1.05) rotateX(15deg);
+            }
+            
+            .cards .card:hover figcaption,
+            .news .card:hover figcaption,
+            .cards .card:focus figcaption,
+            .news .card:focus figcaption,
+            .cards .card:active figcaption,
+            .news .card:active figcaption {
+                transform: none;
+            }
+            
+            .cards .card:hover:after,
+            .news .card:hover:after,
+            .cards .card:focus:after,
+            .news .card:focus:after,
+            .cards .card:active:after,
+            .news .card:active:after {
+                transform: rotate(25deg);
+                top: -40%;
+                opacity: 0.15;
+            }
+            
+            .news .article {
+                overflow: hidden;
+                width: 350px;
+                height: 235px;
+                margin: 20px;
+            }
+            
+            .news .article img {
+                width: 100%;
+                min-height: 100%;
+                transition: 0.2s;
+            }
+            
+            .news .article figcaption {
+                font-size: 14px;
+                text-shadow: 0 1px 0 rgba(51, 51, 51, 0.3);
+                color: #fff;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                padding: 40px;
+                box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+                background: rgba(6, 18, 53, 0.6);
+                opacity: 0;
+                transform: scale(1.15);
+                transition: 0.2s;
+            }
+            
+            .news .article figcaption h3 {
+                color: #3792e3;
+                font-size: 16px;
+                margin-bottom: 0;
+                font-weight: bold;
+            }
+            
+            .news .article:hover img,
+            .news .article:focus img,
+            .news .article:active img {
+                filter: blur(3px);
+                transform: scale(0.97);
+            }
+            
+            .news .article:hover figcaption,
+            .news .article:focus figcaption,
+            .news .article:active figcaption {
+                opacity: 1;
+                transform: none;
+            }
+        </style>
+
+
+        <div class="wrapper" style="margin: 40px 0px 0px 0px">
+            <div class="bar">
+                <a href="dashboard/seller/add-dersses" class="btn-base btn1"><i class="fa fa-plus"></i> جديد </a>
+                <a href="dashboard/seller/activeated_items" class="btn-base btn1"><i class="fa fa-check-circle"></i> المنتجات النشطه </a>
+                <a href="dashboard/seller/dactiveated_items" class="btn-base btn1"><i class="fa fa-minus-circle"></i> المنتجات الخامله </a>
+
+            </div>
+
+
+
+            <div class="cards">
+                <div class="col-12 porducer-me">
+                    <!--Start box-one-->
+                    <div class="porducer-me-box">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6  col-12">
+                                <div class="box">
+                                    <div class='img-me'>
+                                        <div class="overlay"></div>
+                                        <a href="producer-me.html"><img src="images/items/1_1606117526A148.jpeg" alt=""></a>
+                                        <button type="button" class="far fa-heart heart"></button>
+                                        <div class="toolbuttone-me text-center">
+                                            <button type="button" class="fas fa-trash-alt trash"></button>
+                                            <button type="button" class="fas fa-skating skating"></button>
+                                        </div>
+                                    </div>
+                                    <div class="show-button">
+                                        <span class="float-right">$900</span>
+                                        <button class="float-lift" type="button"><i class="fas fa-cart-arrow-down"></i>عربتي </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <figure class="card">
+
+                                <img src="images/items/1_1606117526A148.jpeg" />
+
+                                <figcaption>Dresses <a href="dashboard/seller/view_item/1">view</a></figcaption>
+
+
+
+
+                            </figure>
+                            <div class="col-12 porducer-me">
+                                <!--Start box-one-->
+                                <div class="porducer-me-box">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6  col-12">
+                                            <div class="box">
+                                                <div class='img-me'>
+                                                    <div class="overlay"></div>
+                                                    <a href="producer-me.html"><img src="images/items/1_1606117526B1034.jpeg" alt=""></a>
+                                                    <button type="button" class="far fa-heart heart"></button>
+                                                    <div class="toolbuttone-me text-center">
+                                                        <button type="button" class="fas fa-trash-alt trash"></button>
+                                                        <button type="button" class="fas fa-skating skating"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="show-button">
+                                                    <span class="float-right">$900</span>
+                                                    <button class="float-lift" type="button"><i class="fas fa-cart-arrow-down"></i>عربتي </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <figure class="card">
+
+                                            <img src="images/items/1_1606117526B1034.jpeg" />
+
+                                            <figcaption>Dresses <a href="dashboard/seller/view_item/2">view</a></figcaption>
+
+
+
+
+                                        </figure>
+                                        <div class="col-12 porducer-me">
+                                            <!--Start box-one-->
+                                            <div class="porducer-me-box">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-6  col-12">
+                                                        <div class="box">
+                                                            <div class='img-me'>
+                                                                <div class="overlay"></div>
+                                                                <a href="producer-me.html"><img src="images/items/1_1606117526C1588.jpeg" alt=""></a>
+                                                                <button type="button" class="far fa-heart heart"></button>
+                                                                <div class="toolbuttone-me text-center">
+                                                                    <button type="button" class="fas fa-trash-alt trash"></button>
+                                                                    <button type="button" class="fas fa-skating skating"></button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="show-button">
+                                                                <span class="float-right">$900</span>
+                                                                <button class="float-lift" type="button"><i class="fas fa-cart-arrow-down"></i>عربتي </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <figure class="card">
+
+                                                        <img src="images/items/1_1606117526C1588.jpeg" />
+
+                                                        <figcaption>Dresses <a href="dashboard/seller/view_item/3">view</a></figcaption>
+
+
+
+
+                                                    </figure>
+
+
+
+                                                </div>
+
+
+                                            </div>
+
+
+
+                                        </div>
+                                        <!-- end main content -->
+                                        <!-- import script -->
+
+                                        <script src="js/jQuery-min.js"></script>
+                                        <script src="js/iziModal.min.js"></script>
+                                        <script src="js/iziToast.js"></script>
+                                        <script src="js/control.js"></script>
+                                        <script src="js/notify-sys.js"></script>
+                                        <script src="js/dashboard.js"></script>
+                                        <script src="js/pages/dashboard/users.js"></script>
+                                        <script>
+                                            $(document).ready(function() {
+
+
+
+
+
+
+                                            });
+                                        </script>
+
+
+
+                                        <!-- end import script -->
+</body>
+
+</html>
