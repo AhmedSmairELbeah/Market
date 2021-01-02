@@ -782,3 +782,118 @@ notiAlert
 }
 
 /********************************[page one]*******************************/
+
+/***** [Start cards] *****/
+
+.porducer-me .box 
+{
+   margin-top: 30px;
+   position: relative;
+   cursor: pointer;
+   width: 26%;
+}
+
+.porducer-me  .box .img-me
+{
+   position: relative;
+   overflow: hidden;
+}
+
+.porducer-me  .img-me .heart
+{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border:0;
+    background-color:#FFF;
+    padding: 10px;
+    border-radius: 50%;
+    outline: none;
+    font-size: 20px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.porducer-me .img-me .heart:hover
+{
+    background-color: #E63946;
+    color:#FFF
+}
+
+.porducer-me  .box .img-me .toole-me
+{
+    position: absolute;
+    bottom: -82px;
+    width: 100%;
+    padding: 15px 0;
+    text-align:center;
+    transition: all .2s ease-in-out;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.porducer-me .box .img-me:hover .toole-me
+{
+    bottom: 0px;
+}
+
+.porducer-me  .box .img-me .toole-me .trash 
+,.porducer-me  .box .img-me .toole-me .skating 
+{
+    background-color:#FFF;
+    padding: 10px;
+    border: 0;
+    margin-left: 3%;
+    border-radius: 50%;
+    outline: none;
+    font-size: 20px;
+    transition: all .2s ease-in-out;
+}
+
+.porducer-me  .box .img-me .toole-me .trash:hover 
+,.porducer-me  .box .img-me .toole-me .skating:hover
+{
+    background-color: #E63946;
+    color: #FFF;
+}
+
+.porducer-me  .show-button span
+{
+    color: #a9a9a9;
+    font-family: revert;
+    font-size: 17px;
+}
+
+.porducer-me .show-button 
+{
+    margin-top: 20px;
+}
+
+.porducer-me  .show-button button
+{
+    background-color: #232F3E;
+    border: 0;
+    color:#FFF;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 48%;
+    font-size: 14px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    width: 40%;
+}
+
+.porducer-me  .show-button button i
+{
+    padding: 0;
+    font-size: 15px;
+    color:#FFF;
+    margin-left: 5px;
+}
+
+.porducer-me  .box .show-button button:hover
+{
+    background-color: #008BFF;
+}
+
+/***** [End cards] *****/
