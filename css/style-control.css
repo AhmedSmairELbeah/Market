@@ -785,21 +785,29 @@ notiAlert
 
 /***** [Start cards] *****/
 
-.porducer-me .box 
+.porducer-me-box
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.porducer-me-box .box 
 {
    margin-top: 30px;
    position: relative;
    cursor: pointer;
-   width: 26%;
+ 
 }
 
-.porducer-me  .box .img-me
+.porducer-me-box  .box .img-me
 {
    position: relative;
    overflow: hidden;
 }
 
-.porducer-me  .img-me .heart
+.porducer-me-box .img-me .heart
 {
     position: absolute;
     top: 15px;
@@ -814,13 +822,13 @@ notiAlert
     cursor: pointer;
 }
 
-.porducer-me .img-me .heart:hover
+.porducer-me-box .img-me .heart:hover
 {
     background-color: #E63946;
     color:#FFF
 }
 
-.porducer-me  .box .img-me .toole-me
+.porducer-me-box  .box .img-me .toole-me
 {
     position: absolute;
     bottom: -82px;
@@ -831,13 +839,13 @@ notiAlert
     background-color: rgba(0,0,0,0.5);
 }
 
-.porducer-me .box .img-me:hover .toole-me
+.porducer-me-box  .box .img-me:hover .toole-me
 {
     bottom: 0px;
 }
 
-.porducer-me  .box .img-me .toole-me .trash 
-,.porducer-me  .box .img-me .toole-me .skating 
+.porducer-me-box  .box .img-me .toole-me .trash 
+,.porducer-me-box   .box .img-me .toole-me .skating 
 {
     background-color:#FFF;
     padding: 10px;
@@ -849,26 +857,26 @@ notiAlert
     transition: all .2s ease-in-out;
 }
 
-.porducer-me  .box .img-me .toole-me .trash:hover 
-,.porducer-me  .box .img-me .toole-me .skating:hover
+.porducer-me-box  .box .img-me .toole-me .trash:hover 
+,.porducer-me-box   .box .img-me .toole-me .skating:hover
 {
     background-color: #E63946;
     color: #FFF;
 }
 
-.porducer-me  .show-button span
+.porducer-me-box .show-button span
 {
     color: #a9a9a9;
     font-family: revert;
     font-size: 17px;
 }
 
-.porducer-me .show-button 
+.porducer-me-box .show-button 
 {
     margin-top: 20px;
 }
 
-.porducer-me  .show-button button
+.porducer-me-box  .show-button button
 {
     background-color: #232F3E;
     border: 0;
@@ -883,7 +891,7 @@ notiAlert
     width: 40%;
 }
 
-.porducer-me  .show-button button i
+.porducer-me-box  .show-button button i
 {
     padding: 0;
     font-size: 15px;
@@ -891,7 +899,7 @@ notiAlert
     margin-left: 5px;
 }
 
-.porducer-me  .box .show-button button:hover
+.porducer-me-box  .box .show-button button:hover
 {
     background-color: #008BFF;
 }
