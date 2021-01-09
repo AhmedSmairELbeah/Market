@@ -731,38 +731,6 @@ footer h5 {
     padding: 40px 0;
 }
 
-.porducer-me .tooles-button {
-    background-color: #232f3e;
-    padding: 10px 0;
-}
-
-.porducer-me .tooles-button .buy,
-.porducer-me .tooles-button .clear {
-    border: 0;
-    outline: none;
-    color: #FFF;
-    padding: 10px;
-    margin-right: 1%;
-    font-size: 14px;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    width: 11%;
-}
-
-.porducer-me .tooles-button .buy {
-    background-color: #386641;
-}
-
-.porducer-me .tooles-button .clear {
-    background-color: #E63946;
-}
-
-.porducer-me .tooles-button .buy:hover,
-.porducer-me .tooles-button .clear:hover {
-    background-color: #008bff;
-}
-
 .porducer-me .box {
     margin-top: 30px;
     position: relative;
@@ -771,7 +739,6 @@ footer h5 {
 
 .porducer-me .box .img-me {
     position: relative;
-    overflow: hidden;
 }
 
 .porducer-me .box .img-me .overlay {
@@ -787,53 +754,14 @@ footer h5 {
     height: 100%;
 }
 
-.porducer-me .img-me .heart {
+.porducer-me .img-me .fa-heart {
     position: absolute;
     top: 15px;
     right: 15px;
-    border: 0;
     background-color: #FFF;
     padding: 10px;
     border-radius: 50%;
-    outline: none;
     font-size: 20px;
-    transition: all .2s ease-in-out;
-}
-
-.porducer-me .img-me .heart:hover {
-    background-color: #E63946;
-    color: #FFF
-}
-
-.porducer-me .box .img-me .toole-me {
-    position: absolute;
-    bottom: -80px;
-    width: 100%;
-    padding: 15px 0;
-    transition: all .2s ease-in-out;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.porducer-me .box .img-me:hover .toole-me {
-    bottom: 0px;
-}
-
-.porducer-me .box .img-me .toole-me .trash,
-.porducer-me .box .img-me .toole-me .skating {
-    background-color: #FFF;
-    padding: 10px;
-    border: 0;
-    margin-left: 3%;
-    border-radius: 50%;
-    outline: none;
-    font-size: 20px;
-    transition: all .2s ease-in-out;
-}
-
-.porducer-me .box .img-me .toole-me .trash:hover,
-.porducer-me .box .img-me .toole-me .skating:hover {
-    background-color: #E63946;
-    color: #FFF;
 }
 
 .porducer-me .show-button span {
@@ -1218,3 +1146,107 @@ footer h5 {
 
 
 /*End section-subscrip*/
+
+.search-btn {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+.search button {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.search input {
+    padding: 0px !important;
+    margin: 0px !important;
+    width: 300px !important;
+}
+
+.tooles-button .buy,
+.tooles-button .clear {
+    border: 0;
+    outline: none;
+    color: #FFF;
+    padding: 10px;
+    margin-right: 1%;
+    font-size: 14px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    width: 11%;
+}
+
+.tooles-button .buy {
+    background-color: #386641;
+}
+
+.tooles-button .clear {
+    background-color: #E63946;
+}
+
+.tooles-button .buy:hover,
+.tooles-button .clear:hover {
+    background-color: #008bff;
+}
+
+.tooles-button {
+    width: 100%;
+}
+
+.tooles-button .clear,
+.tooles-button .buy {
+    width: 100px;
+}
+
+.addToWishList {
+    background-color: rgba(0, 0, 0, 0);
+    border: rgba(0, 0, 0, 0);
+    color: #E63946 !important;
+}
+
+.heart {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: 0;
+    background-color: #FFF;
+    color: #fff;
+    border: #1A1C29;
+    padding: 10px;
+    border-radius: 50%;
+    outline: none;
+    font-size: 20px;
+    transition: all .2s ease-in-out;
+}
+
+.addToWishList:hover {
+    background-color: #E63946 !important;
+    color: #fff !important;
+}
+
+.porducer {
+    min-height: 60vh !important;
+}
+
+#add_user_btn {
+    background-color: rgba(0, 0, 0, 0);
+    border: rgba(0, 0, 0, 0) !important;
+}
+
+.addToWishList:focus {
+    outline: none;
+}
+
+.basketQuantityModal {
+    text-align: center;
+}
+
+.basketQuantityModal p {
+    padding: 10px;
+}
+
+.basketQuantityModal button {
+    padding: 2px 10px 2px 10px;
+}
