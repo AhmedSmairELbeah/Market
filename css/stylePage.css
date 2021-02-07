@@ -764,7 +764,7 @@ footer h5 {
     border-radius: 50%;
     font-size: 20px;
     outline: 0;
-    color: #FFF;
+    color: #232F3E;
 }
 
 .porducer-me .show-button span {
@@ -1193,7 +1193,9 @@ footer h5 {
     width: 300px !important;
 }
 
-.tooles-button 
+/***************************************************************bar****************************/
+
+.tooles-button
 {
     background-color: #363A43;
     width: 100%;
@@ -1231,23 +1233,67 @@ footer h5 {
     width: 150px;
 }
 
-.tooles-button .sub-total
+/***************************************************************End bar****************************/
+
+/***************************************************************Start basket barr****************************/
+
+.basket-bar
+{
+    background-color: #363A43;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basket-bar .buy,
+.basket-bar .clear {
+    border: 0;
+    outline: none;
+    color: #FFF;
+    padding: 10px;
+    font-size: 14px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.basket-bar .buy {
+    background-color: #386641;
+    margin-right: 3%;
+}
+
+.basket-bar .clear {
+    background-color: #E63946;
+}
+
+.basket-bar .buy:hover,
+.basket-bar .clear:hover {
+    background-color: #008bff;
+}
+
+.basket-bar .clear,
+.basket-bar .buy {
+    width: 150px;
+}
+
+.basket-bar .sub-total
 {
     margin-top: 10px;
 }
 
-.tooles-button .sub-total .total-car ,
-.tooles-button .sub-total .total-shiping
+.basket-bar .sub-total .total-car ,
+.basket-bar .sub-total .total-shiping
 {
     padding: 8px;
     color: #DDDDDD;
 }
 
-.tooles-button .sub-total .total-car span,
-.tooles-button .sub-total .total-shiping span
+.basket-bar .sub-total .total-car span,
+.basket-bar .sub-total .total-shiping span
 {
     color: #E63946;
 }
+
+/***************************************************************End basket bar****************************/
 
 .addToWishList {
     background-color: rgba(0, 0, 0, 0);
