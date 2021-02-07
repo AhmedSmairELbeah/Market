@@ -1164,22 +1164,29 @@ footer h5 {
     width: 300px !important;
 }
 
+.tooles-button 
+{
+    background-color: #363A43;
+    width: 100%;
+    padding: 10px 0;
+}
+
 .tooles-button .buy,
 .tooles-button .clear {
     border: 0;
     outline: none;
     color: #FFF;
     padding: 10px;
-    margin-right: 1%;
+    margin-top: 10px;
     font-size: 14px;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    width: 11%;
 }
 
 .tooles-button .buy {
     background-color: #386641;
+    margin-right: 3%;
 }
 
 .tooles-button .clear {
@@ -1191,13 +1198,27 @@ footer h5 {
     background-color: #008bff;
 }
 
-.tooles-button {
-    width: 100%;
-}
-
 .tooles-button .clear,
 .tooles-button .buy {
-    width: 100px;
+    width: 150px;
+}
+
+.tooles-button .sub-total
+{
+    margin-top: 10px;
+}
+
+.tooles-button .sub-total .total-car ,
+.tooles-button .sub-total .total-shiping
+{
+    padding: 8px;
+    color: #DDDDDD;
+}
+
+.tooles-button .sub-total .total-car span,
+.tooles-button .sub-total .total-shiping span
+{
+    color: #E63946;
 }
 
 .addToWishList {
