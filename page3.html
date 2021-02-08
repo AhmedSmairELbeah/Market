@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,14 +11,14 @@
 
     <!-- Google font -->
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo|Oswald&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo|Oswald&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reem+Kufi&amp;display=swap">
 
     <!-- Bootstrap -->
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- normalize -->
-    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="css/normalize.css">
 
     <!-- Font Awesome Icon -->
     <link rel="stylesheet" href="css/all.min.css">
@@ -28,15 +27,15 @@
     <link rel="icon" href="img/logo-2.png">
 
     <!-- Custom stlylesheet -->
-    <link rel="stylesheet" href="css/stylePage.css" />
+    <link rel="stylesheet" href="css/stylePage.css">
     <link rel="stylesheet" type="text/css" href="css/iziToast.min.css">
     <link rel="stylesheet" type="text/css" href="css/iziModal.min.css">
 
-    <meta name="csrf-token" content="yAJ5Fyp6rUH72N4cAdIRqfCruwnEFRuKJlUCv6iS">
+    <meta name="csrf-token" content="46A4fmLIdy2pm3HSaH999FC3ao6Aw9XJmCeXAJiZ">
 
 </head>
 
-<body>
+<body class="light">
 
     <!--Start footer Top-->
 
@@ -49,7 +48,7 @@
                     <span>|</span>
                     <li>
                         <form method="POST" action="http://127.0.0.1:8000/logout">
-                            <input type="hidden" name="_token" value="yAJ5Fyp6rUH72N4cAdIRqfCruwnEFRuKJlUCv6iS"> <a class="dropdown-menu-link" href="http://127.0.0.1:8000/logout" onclick="event.preventDefault(); this.closest('form').submit();">تسجيل الخروج</a>
+                            <input type="hidden" name="_token" value="46A4fmLIdy2pm3HSaH999FC3ao6Aw9XJmCeXAJiZ"> <a class="dropdown-menu-link" href="http://127.0.0.1:8000/logout" onclick="event.preventDefault(); this.closest('form').submit();">تسجيل الخروج</a>
                         </form>
                     </li>
 
@@ -57,7 +56,7 @@
                         <input id="search_box" type="hidden" name="section" value="">
 
                         <li class="search">
-                            <input type="hidden" name="_token" value="yAJ5Fyp6rUH72N4cAdIRqfCruwnEFRuKJlUCv6iS"> <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+                            <input type="hidden" name="_token" value="46A4fmLIdy2pm3HSaH999FC3ao6Aw9XJmCeXAJiZ"> <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
                             <input type="search" name="search_text" class="" placeholder="بحث">
                         </li>
                     </form>
@@ -136,23 +135,27 @@
 
     <!--Start porducer-->
 
-    <section class='porducer'>
+    <section class="porducer">
         <div class="container">
             <div class="row">
 
                 <div class="col-12 porducer-me">
                     <!--Start box-one-->
                     <div class="porducer-me-box box-one">
+
+
                         <div class="row">
 
 
-                            <div class="basket-bar text-center ">
+                            <div class="basket-ba tooles-button text-center ">
+
                                 <form action="/basket/clear" method="POST" style="display: inline-block">
-                                    <input type="hidden" name="_token" value="yAJ5Fyp6rUH72N4cAdIRqfCruwnEFRuKJlUCv6iS"> <button type="submit" class="clear">تنظيف العربه</button>
+                                    <input type="hidden" name="_token" value="46A4fmLIdy2pm3HSaH999FC3ao6Aw9XJmCeXAJiZ"> <button type="submit" class="clear">تنظيف العربه</button>
                                 </form>
-                                <form action="/basket/buy" method="POST" style="display: inline-block">
-                                    <input type="hidden" name="_token" value="yAJ5Fyp6rUH72N4cAdIRqfCruwnEFRuKJlUCv6iS"> <button type="submit" class="buy">شراء</button>
+                                <form id="buyBtnForm" action="/basket/buy" onsubmit="" method="POST" style="display: inline-block">
+                                    <input type="hidden" name="_token" value="46A4fmLIdy2pm3HSaH999FC3ao6Aw9XJmCeXAJiZ"> <button type="button" id="buyBtn" data-question="ask this q" class="buy ask">شراء</button>
                                 </form>
+
                                 <div class="sub-total">
                                     <span class="total-car"><label> اجمالي السلة: </label><span> 2000</span></span>
                                     <span class="total-shiping"><label>  تكلفة الشحن : </label><span> 2000</span></span>
@@ -160,36 +163,37 @@
                             </div>
 
 
+
+
                             <div class="col-md-4 col-sm-6  col-12">
                                 <div class="box">
-                                    <div class='img-me'>
+                                    <div class="img-me">
                                         <div class="overlay"></div>
                                         <a href="item/1"><img src="images/items/1_1606117526A148.jpeg" alt="gomla-dresses-wideings"></a>
-                                        <button class="addToWishList far fa-heart" data-item_id="1"></button>
+                                        <button class="addToWishList far fa-heart" data-item_id="10"></button>
                                     </div>
                                     <div class="show-button">
                                         <span class="float-right">$1000</span>
-                                        <button id="edit__id__1" class="edit_basket" data-quantity="1" style="margin-top:5px;" data-item_id="1">الكميه</button>
-                                        <span id="quantity__id__1" class="float-right"> الكميه : 1</span>
+                                        <button id="edit__id__10" class="edit_basket" data-quantity="1" style="margin-top:5px;" data-item_id="10"><i class="fa fa-list"></i></button>
+
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-md-4 col-sm-6  col-12">
                                 <div class="box">
-                                    <div class='img-me'>
+                                    <div class="img-me">
                                         <div class="overlay"></div>
                                         <a href="item/2"><img src="images/items/1_1606117526B1034.jpeg" alt="gomla-dresses-wideings"></a>
-                                        <button class="addToWishList far fa-heart" data-item_id="2"></button>
+                                        <button class="addToWishList far fa-heart" data-item_id="11"></button>
                                     </div>
                                     <div class="show-button">
                                         <span class="float-right">$2000</span>
-                                        <button id="edit__id__2" class="edit_basket" data-quantity="1" style="margin-top:5px;" data-item_id="2">الكميه</button>
-                                        <span id="quantity__id__2" class="float-right"> الكميه : 1</span>
+                                        <button id="edit__id__11" class="edit_basket" data-quantity="1" style="margin-top:5px;" data-item_id="11"><i class="fa fa-list"></i></button>
+
                                     </div>
                                 </div>
                             </div>
-
 
 
 
@@ -198,13 +202,7 @@
                     <!--End box-one-->
 
 
-                    <div id="modal" class="basketQuantityModal">
-                        <p>
-                            <span>الكميه</span>
-                            <input value="" id="quantity" type="number" onkeypress='return event.charCode >= 48 && event.charCode <= 57' />
-                        </p>
-                        <button data-item_id="" class="btn-base btn-success" id="updateQU">تحديث</button>
-                    </div>
+
 
                 </div>
 
@@ -288,7 +286,7 @@
         <div class="container">
             <h5>حقوق النشر محفوظة </h5>
         </div>
-        </div>
+
     </footer>
     <!--End footer-->
 
@@ -302,6 +300,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/control.js"></script>
     <script src="js/notify-sys.js"></script>
+    <script src="js/public.js"></script>
     <script src="js/pages/public/basket.js"></script>
     <script src="js/pages/public/items.js"></script>
     <script src=""></script>
@@ -316,6 +315,46 @@
         });
     </script>
 
+
+
+    <div id="messageAlert" aria-hidden="true" aria-labelledby="messageAlert" role="dialog" class="iziModal" style="z-index: 999; border-radius: 3px; max-width: 600px;">
+        <div class="iziModal-wrap">
+            <div class="iziModal-content" style="padding: 0px;">
+                <div id="q-text"></div>
+                <button data-izimodal-close="" data-izimodal-transitionout="bounceOutDown">Close</button>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="basketQuantityModal iziModal" aria-hidden="true" aria-labelledby="modal" role="dialog" style="background: rgba(255, 255, 255, 0.9) none repeat scroll 0% 0%; z-index: 103; border-radius: 3px; max-width: 700px;">
+        <div class="iziModal-wrap">
+            <div class="iziModal-wrap" style="height: 214px;">
+                <div class="iziModal-content" style="padding: 0px;">
+                    <h5 class="mt-1">معلومات العنصر</h5>
+                    <p>المخزون : <span id="storeQuantity">3</span></p>
+                    <p>اللون : <span id="itemColor">Red</span></p>
+                    <p>الحجم : <span id="itemSize">X</span></p>
+                    <p>الكميه المطلوبه : <span id="itemQuantity">1</span></p>
+                    <hr>
+                    <p>
+                        <span>الكميه</span>
+                        <input value="" id="quantity" type="number" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57">
+                    </p>
+                    <p>
+                        <span>اللون</span>
+                        <select name="color" id="colorsOprions"><option value="Red">Red</option></select>
+
+                    </p>
+                    <p>
+                        <span>الحجم</span>
+                        <select name="size" id="sizeOprions"><option selected="" value="X">X</option><option value="XL">XL</option></select>
+
+                    </p>
+                    <button data-item_id="10" class="btn btn-success mb-2" id="updateQU">تحديث</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 
 </html>

@@ -764,7 +764,7 @@ footer h5 {
     border-radius: 50%;
     font-size: 20px;
     outline: 0;
-    color: #232F3E;
+    color: #FFF;
 }
 
 .porducer-me .show-button span {
@@ -1046,18 +1046,17 @@ footer h5 {
 
 /*----------------------------------Start this is page Subscription ---------------------------------------------------------------------*/
 
-.toole-me
-{
+.toole-me {
     position: absolute;
     width: 100%;
     bottom: -80px;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 10px 0;
+    transition: all .2s ease-in-out;
 }
 
-.toole-me .trash
-,.toole-me .skating
-{
+.toole-me .trash,
+.toole-me .skating {
     background-color: #f8f9fa;
     color: #232f3e;
     border: none;
@@ -1067,9 +1066,8 @@ footer h5 {
     margin-left: 3%;
 }
 
-.box .img-me:hover .toole-me
-{
-    bottom: 0;
+.box .img-me:hover .toole-me {
+    bottom: 10px;
 }
 
 
@@ -1193,10 +1191,7 @@ footer h5 {
     width: 300px !important;
 }
 
-/***************************************************************bar****************************/
-
-.tooles-button
-{
+.tooles-button {
     background-color: #363A43;
     width: 100%;
     padding: 10px 0;
@@ -1233,67 +1228,20 @@ footer h5 {
     width: 150px;
 }
 
-/***************************************************************End bar****************************/
-
-/***************************************************************Start basket barr****************************/
-
-.basket-bar
-{
-    background-color: #363A43;
-    width: 100%;
-    padding: 10px 0;
-}
-
-.basket-bar .buy,
-.basket-bar .clear {
-    border: 0;
-    outline: none;
-    color: #FFF;
-    padding: 10px;
-    font-size: 14px;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-
-.basket-bar .buy {
-    background-color: #386641;
-    margin-right: 3%;
-}
-
-.basket-bar .clear {
-    background-color: #E63946;
-}
-
-.basket-bar .buy:hover,
-.basket-bar .clear:hover {
-    background-color: #008bff;
-}
-
-.basket-bar .clear,
-.basket-bar .buy {
-    width: 150px;
-}
-
-.basket-bar .sub-total
-{
+.tooles-button .sub-total {
     margin-top: 10px;
 }
 
-.basket-bar .sub-total .total-car ,
-.basket-bar .sub-total .total-shiping
-{
+.tooles-button .sub-total .total-car,
+.tooles-button .sub-total .total-shiping {
     padding: 8px;
     color: #DDDDDD;
 }
 
-.basket-bar .sub-total .total-car span,
-.basket-bar .sub-total .total-shiping span
-{
+.tooles-button .sub-total .total-car span,
+.tooles-button .sub-total .total-shiping span {
     color: #E63946;
 }
-
-/***************************************************************End basket bar****************************/
 
 .addToWishList {
     background-color: rgba(0, 0, 0, 0);
