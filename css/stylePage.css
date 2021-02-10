@@ -1345,10 +1345,12 @@ footer h5 {
     outline: none;
 }
 
+/****************************[basketQuantityModal]***************************************************/
+
 .basketQuantityModal {
     
     max-width: 450px !important;
-    min-height: 553px;
+    min-height: 584px;
     padding: 20px 14px;
     text-align: right;
     border-radius: 10px !important;
@@ -1357,7 +1359,7 @@ footer h5 {
 .basketQuantityModal .header
 {
     color: #008bff;
-    padding-bottom: 9px;
+    padding:5px 0;
     border-bottom: 1px solid #adb5bd;
 }
 
@@ -1366,11 +1368,6 @@ footer h5 {
     margin: 0;
     padding: 9px 0;
     color: #495057;
-}
-
-.basketQuantityModal p:last-of-type
-{
-    border-bottom: 1px solid #adb5bd;
 }
 
 .basketQuantityModal h6
@@ -1395,3 +1392,5 @@ footer h5 {
     outline: 0;
     border: none;
 }
+
+/****************************[basketQuantityModal]***************************************************/
