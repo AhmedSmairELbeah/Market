@@ -1349,8 +1349,10 @@ footer h5 {
 
 .basketQuantityModal {
     
+    overflow: hidden;
+    overflow-y: ;
     max-width: 450px !important;
-    min-height: 584px;
+    min-height: 599px;
     padding: 20px 14px;
     text-align: right;
     border-radius: 10px !important;
