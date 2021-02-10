@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>الصفحة الرئيسية</title>
+
+    <!-- Google font -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo|Oswald&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap">
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- normalize -->
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!--  psge Icon -->
+    <link rel="icon" href="img/logo-2.png">
+
+    <!-- Custom stlylesheet -->
+    <link rel="stylesheet" href="css/stylePage.css" />
+    <link rel="stylesheet" type="text/css" href="css/iziToast.min.css">
+    <link rel="stylesheet" type="text/css" href="css/iziModal.min.css">
+
+    <meta name="csrf-token" content="klXBxLGpSIJ4QxrdyirVXzLEd89xCDS0EtyHka4g">
+
+</head>
+
+<body>
+
+    <!--Start footer Top-->
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <ul class="header-links col-lg-8 col-12">
+                    <li><a href="dashboard">حساب المستخدم</a></li>
+                    <span>|</span>
+                    <li>
+                        <form method="POST" action="http://127.0.0.1:8000/logout">
+                            <input type="hidden" name="_token" value="klXBxLGpSIJ4QxrdyirVXzLEd89xCDS0EtyHka4g"> <a class="dropdown-menu-link" href="http://127.0.0.1:8000/logout" onclick="event.preventDefault(); this.closest('form').submit();">تسجيل الخروج</a>
+                        </form>
+                    </li>
+
+                    <form action="/search/" style="display: inline-block">
+                        <input id="search_box" type="hidden" name="section" value="">
+
+                        <li class="search">
+                            <input type="hidden" name="_token" value="klXBxLGpSIJ4QxrdyirVXzLEd89xCDS0EtyHka4g"> <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+                            <input type="search" name="search_text" class="" placeholder="بحث">
+                        </li>
+                    </form>
+                </ul>
+
+                <ul class="header-links-one col-lg-4 col-12">
+                    <li><a href="basket"><i class="fas fa-cart-arrow-down"></i></a></li>
+                    <li><a href="wishlist"><i class="far fa-heart"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <!--End footer Top-->
+
+    <!--Start header-->
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="box1 col-3 text-right">
+                    <a href="register.html"><i class="fas fa-user-alt"></i></a>
+                    <a href="#"><i class="far fa-heart"></i></a>
+                </div>
+
+                <div class="col-6 text-center">
+                    <div class="img-me">
+                        <a href=""><img src="img/AHMED.png" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="box2 col-3 text-left">
+                    <a href="#"><i class="fa fa-search"></i></a>
+                    <a href="#"><i class="fas fa-bars"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!--End header-->
+
+    <!--Start navbar-->
+
+    <nav>
+        <div class="container">
+            <ul class="main-nav">
+                <li class="active"><a href="">الصفحة الرئيسية</a></li>
+                <li><a href="wedings">فساتين زفاف</a></li>
+                <li><a href="soaris">فساتين سوارية </a></li>
+                <li><a href="kids">فساتين أطفال</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--End navbar-->
+
+    <!--Start NavBar right-->
+
+    <section class="nav-right">
+        <ul class="links text-right">
+            <i class="fa fa-times"></i>
+            <li class="active"><a href="">الصفحة الرئيسية</a></li>
+            <li><a href="wedings">فساتين زفاف</a></li>
+            <li><a href="products.html">فساتين سوارية </a></li>
+            <li><a href="products.html">فساتين أطفال</a></li>
+        </ul>
+    </section>
+
+    <!--End NavBar right-->
+
+    <div id="messageAlert">
+        <div id="q-text"></div>
+        <button data-izimodal-close="" data-izimodal-transitionout="bounceOutDown">Close</button>
+    </div>
+
+
+    <!--Start section-img-->
+    <section class="section-img"></section>
+    <!--Start section-img-->
+
+
+    <!--Start porducer-->
+
+    <section class='porducer'>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 porducer-me">
+                    <!--Start box-one-->
+                    <div class="porducer-me-box box-one">
+                        <div class="row">
+
+                            <div class="col-md-4 col-sm-6  col-12">
+                                <div class="box">
+                                    <div class='img-me'>
+                                        <div class="overlay"></div>
+                                        <a href="item/1"><img src="images/items/1_1606117526A148.jpeg" alt="gomla-dresses-wideings"></a>
+                                        <button class="addToWishList far fa-heart" data-item_id="1"><i class=""></i></button>
+                                    </div>
+                                    <div class="show-button">
+                                        <span class="float-right">$1000</span>
+                                        <button data-item_id="1" class="float-lift addToBasket" type="button"><i class="fas fa-cart-arrow-down"></i>الى السله </button>
+
+                                        <small class="float-right"><span>العموله</span> $300 </small>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6  col-12">
+                                <div class="box">
+                                    <div class='img-me'>
+                                        <div class="overlay"></div>
+                                        <a href="item/2"><img src="images/items/1_1606117526B1034.jpeg" alt="gomla-dresses-wideings"></a>
+                                        <button class="addToWishList far fa-heart" data-item_id="2"><i class=""></i></button>
+                                    </div>
+                                    <div class="show-button">
+                                        <span class="float-right">$2000</span>
+                                        <button data-item_id="2" class="float-lift addToBasket" type="button"><i class="fas fa-cart-arrow-down"></i>الى السله </button>
+
+                                        <small class="float-right"><span>العموله</span> $300 </small>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6  col-12">
+                                <div class="box">
+                                    <div class='img-me'>
+                                        <div class="overlay"></div>
+                                        <a href="item/3"><img src="images/items/1_1606117526C1588.jpeg" alt="gomla-dresses-wideings"></a>
+                                        <button class="addToWishList far fa-heart" data-item_id="3"><i class=""></i></button>
+                                    </div>
+                                    <div class="show-button">
+                                        <span class="float-right">$3000</span>
+                                        <button data-item_id="3" class="float-lift addToBasket" type="button"><i class="fas fa-cart-arrow-down"></i>الى السله </button>
+
+                                        <small class="float-right"><span>العموله</span> $200 </small>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                    <!--End box-one-->
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--End porducer -->
+
+    <!--Start section-six-->
+
+    <section class="section-six text-center">
+        <div class="container">
+            <div class="row">
+                <div class=" col-lg-3 col-sm-6 col-xs-12 box">
+                    <h2>الخدمات</h2>
+                    <a href="register.html">
+                        <p>تسجيل دخول</p>
+                    </a>
+                    <a href="#">
+                        <p>بطاقة الا</p>
+                    </a>
+                    <a href="#">
+                        <p>مشترياتي</p>
+                    </a>
+                    <a href="#">
+                        <p>مصار مشتر</p>
+                    </a>
+                </div>
+
+                <div class=" col-lg-3 col-sm-6 col-xs-12 box">
+                    <h2>معلومات</h2>
+                    <a href="#">
+                        <p>معلومات عنا</p>
+                    </a>
+                    <a href="#">
+                        <p> تواصل معنا</p>
+                    </a>
+                    <a href="#">
+                        <p>سياسة خاصة</p>
+                    </a>
+                    <a href="#">
+                        <p> الطلبات</p>
+                    </a>
+                </div>
+
+                <div class=" col-lg-3 col-sm-6 col-xs-12 box">
+                    <h2>تواصل</h2>
+                    <a href="#">
+                        <p>صفقات</p>
+                    </a>
+                    <a href="#">
+                        <p> موبيل</p>
+                    </a>
+                    <a href="#">
+                        <p>لاب توب</p>
+                    </a>
+                    <a href="#">
+                        <p> كاميرا</p>
+                    </a>
+                </div>
+
+                <div class=" col-lg-3 col-sm-6 col-xs-12 abuot">
+                    <h2>معلومات عنا</h2>
+                    <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات </p>
+                    <ul class="links ">
+                        <li><a href="#"><i class="fa fa-phone"></i> 010000000000000</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> email@email.com</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> مصر</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End section-six-->
+    <div class="but-scroll"><i class="fas fa-cloud-upload-alt fa-4x"></i></div>
+    <!--Start footer-->
+    <footer class="text-center">
+        <div class="container">
+            <h5>حقوق النشر محفوظة </h5>
+        </div>
+        </div>
+    </footer>
+    <!--End footer-->
+
+    <script>
+        window.addEventListener('load', (event) => {
+            var search_box = document.getElementById("search_box"); // Get the element with id="demo"
+            search_box.value = "فساتين زفاف";
+        });
+    </script>
+
+
+
+
+    <script src="js/jQuery-min.js"></script>
+    <script src="js/iziModal.min.js"></script>
+    <script src="js/iziToast.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/control.js"></script>
+    <script src="js/notify-sys.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/pages/public/items.js"></script>
+    <script src=""></script>
+    <script src=""></script>
+    <script>
+        $(document).ready(function() {
+
+
+
+
+
+
+        });
+    </script>
+
+</body>
+
+</html>

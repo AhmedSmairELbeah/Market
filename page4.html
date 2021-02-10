@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>صفحة التحكم </title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/png" href="img/logo-2.png" />
+
+    <!-- Import lib -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo|Oswald&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/iziModal.min.css">
+    <link rel="stylesheet" type="text/css" href="css/iziToast.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style-control.css">
+    <link rel="stylesheet" type="text/css" href="css/simplegrid.css">
+    <!-- End import lib -->
+
+    <meta name="csrf-token" content="MsgN0VslJ1RaQXfh7kigbSGlZUXlQj7mQnE3BAJy">
+</head>
+
+<body class="overlay-scrollbar">
+    <!-- navbar -->
+    <div class="navbar">
+        <!-- nav left -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link">
+                    <i class="fas fa-bars" onclick="collapseSidebar()"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href=""><img src="img/logo-2.png" alt="ATPro logo" class="logo logo-light"></a>
+            </li>
+        </ul>
+        <!-- end nav left -->
+
+        <!-- form -->
+        <form class="navbar-search">
+
+        </form>
+        <!-- end form -->
+        <!-- nav right -->
+        <ul class="navbar-nav nav-right">
+            <li class="nav-item dropdown">
+                <a class="nav-link">
+                    <i class="fas fa-bell dropdown-toggle" data-toggle="notification-menu"></i>
+
+
+                </a>
+                <ul id="notification-menu" class="dropdown-menu notification-menu" style="height: 500px;">
+                    <div class="dropdown-menu-header">
+                        <span>
+							الإشعارات
+						</span>
+                    </div>
+                    <div class="dropdown-menu-content overlay-scrollbar scrollbar-hover">
+                        <style>
+                            .active {
+                                background-color: aqua;
+                            }
+                        </style>
+
+
+
+                        <li data-noti_id="21" class="dropdown-menu-item seeStatus   ">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>
+									ناسف الطلبيه رقم 27 تم الغاءها
+									<br>
+									<span>
+										2021-02-09 13:18:01
+									</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li data-noti_id="19" class="dropdown-menu-item seeStatus   ">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>
+									يتم الان تجهيز طلبك تحت الرقم : 27
+									<br>
+									<span>
+										2021-02-09 13:15:55
+									</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li data-noti_id="13" class="dropdown-menu-item seeStatus   ">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>
+									يتم الان تجهيز طلبك تحت الرقم : 26
+									<br>
+									<span>
+										2021-02-09 12:48:19
+									</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li data-noti_id="11" class="dropdown-menu-item seeStatus   ">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>
+									يتم الان تجهيز طلبك تحت الرقم : 25
+									<br>
+									<span>
+										2021-02-09 12:46:51
+									</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li data-noti_id="9" class="dropdown-menu-item seeStatus   ">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>
+									يتم الان تجهيز طلبك تحت الرقم : 24
+									<br>
+									<span>
+										2021-02-09 12:39:36
+									</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li data-noti_id="7" class="dropdown-menu-item seeStatus   ">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>
+									يتم الان تجهيز طلبك تحت الرقم : 23
+									<br>
+									<span>
+										2021-02-08 13:21:47
+									</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li data-noti_id="5" class="dropdown-menu-item seeStatus   ">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>
+									يتم الان تجهيز طلبك تحت الرقم : 14
+									<br>
+									<span>
+										2021-02-07 17:08:24
+									</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li data-noti_id="3" class="dropdown-menu-item seeStatus   ">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>
+									يتم الان تجهيز طلبك تحت الرقم : 13
+									<br>
+									<span>
+										2021-02-07 16:24:29
+									</span>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li data-noti_id="1" class="dropdown-menu-item seeStatus   ">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>
+									يتم الان تجهيز طلبك تحت الرقم : 12
+									<br>
+									<span>
+										2021-02-07 16:22:03
+									</span>
+                                </span>
+                            </a>
+                        </li>
+
+                    </div>
+                    <div class="dropdown-menu-footer">
+                        <form action="/dashboard/clearnoti" method="post">
+                            <input type="hidden" name="_token" value="MsgN0VslJ1RaQXfh7kigbSGlZUXlQj7mQnE3BAJy"> <input type="submit" class="btn-base btn1" value="الكل كمقروء">
+                        </form>
+
+                    </div>
+                </ul>
+            </li>
+            <li class="nav-item avt-wrapper">
+                <div class="avt dropdown">
+                    <img src="img/user_photo.jpg" alt="User image" class="dropdown-toggle" data-toggle="user-menu">
+                    <ul id="user-menu" class="dropdown-menu">
+                        <li class="dropdown-menu-item">
+                            <a class="dropdown-menu-link" href="dashboard/profile">
+                                <div>
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <span> vupysi</span>
+                            </a>
+                        </li>
+
+
+                        <li class="dropdown-menu-item">
+                            <form method="POST" action="http://127.0.0.1:8000/logout">
+                                <input type="hidden" name="_token" value="MsgN0VslJ1RaQXfh7kigbSGlZUXlQj7mQnE3BAJy">
+                                <!-- <a href="logout" class="dropdown-menu-link"> -->
+                                <a class="dropdown-menu-link" href="http://127.0.0.1:8000/logout" onclick="event.preventDefault(); this.closest('form').submit();">
+                            </form>
+                            <div>
+                                <i class="fas fa-sign-out-alt"></i>
+                            </div>
+                            <span>خروج</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- end nav right -->
+    </div>
+    <!-- end navbar -->
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <ul class="sidebar-nav">
+            <li class="sidebar-nav-item">
+                <a href="dashboard" class="sidebar-nav-link ">
+                    <div>
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <span>
+						لوحه التحكم
+					</span>
+                </a>
+            </li>
+
+
+            <li class="sidebar-nav-item">
+                <a href="dashboard/myorders" class="sidebar-nav-link ">
+                    <div>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <span> طلباتي </span>
+                </a>
+            </li>
+
+            <li class="sidebar-nav-item">
+                <a href="dashboard/receivied-orders" class="sidebar-nav-link ">
+                    <div>
+                        <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <span> تم الشراء </span>
+                </a>
+            </li>
+
+            <li class="sidebar-nav-item">
+                <a href="payments" class="sidebar-nav-link active">
+                    <div>
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <span> الدفعات الماليه </span>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+    <!-- end sidebar -->
+
+    <!-- main content -->
+    <div class="wrapper">
+
+
+        <form action="/get-paid" method="post">
+            <input type="hidden" name="_token" value="MsgN0VslJ1RaQXfh7kigbSGlZUXlQj7mQnE3BAJy"> <input type="text" name="phone_number" placeholder="رقم الهاتف">
+            <input type="text" name="money" placeholder="المبلغ">
+            <select name="payment_methode" id="">
+        <option value="vodafone">vodafone</option>
+    </select>
+            <button type="submit" class="btn-base btn-success">طلب التحويل</button>
+        </form>
+
+
+
+
+        <style>
+            .styled-table {
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 0.9em;
+                font-family: sans-serif;
+                min-width: 400px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            }
+            
+            .styled-table thead tr {
+                background-color: #009879;
+                color: #ffffff;
+                /* text-align: left; */
+                text-align: center;
+            }
+            
+            .styled-table th,
+            .styled-table td {
+                padding: 12px 15px;
+            }
+            
+            .styled-table tbody tr {
+                border-bottom: 1px solid #dddddd;
+            }
+            
+            .styled-table tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+            }
+            
+            .styled-table tbody tr:last-of-type {
+                border-bottom: 2px solid #009879;
+            }
+            
+            .styled-table tbody tr.active-row {
+                font-weight: bold;
+                color: #009879;
+            }
+        </style>
+
+
+        <table class="styled-table" dir="rtl">
+            <thead>
+                <tr>
+                    <th>المبلغ</th>
+                    <th>وسيلة الدفع</th>
+                    <th>الهاتف</th>
+                    <th>الحاله</th>
+                    <th>التاريخ</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <!-- and so on... -->
+            </tbody>
+        </table>
+
+
+    </div>
+    <!-- end main content -->
+    <!-- import script -->
+
+    <script src="js/jQuery-min.js"></script>
+    <script src="js/iziModal.min.js"></script>
+    <script src="js/iziToast.js"></script>
+    <script src="js/control.js"></script>
+    <script src="js/notify-sys.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src=""></script>
+    <script>
+        $(document).ready(function() {
+
+
+
+
+
+
+        });
+    </script>
+
+
+
+    <!-- end import script -->
+</body>
+
+</html>
