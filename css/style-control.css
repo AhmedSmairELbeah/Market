@@ -31,7 +31,6 @@ body {
     background: #FAFAFA;
     margin: 0;
     direction: rtl;
-    font-family: 'Cairo', sans-serif, 'Oswald', sans-serif;
 }
 
 .navbar {
@@ -905,3 +904,46 @@ notiAlert
 }
 
 /***** [End cards] *****/
+
+/************[Start conversion]************************/
+
+.conversion
+{
+    background-color: #fff;
+    width: 80%;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 15px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.conversion input ,
+.conversion select
+{
+    width: 156px;
+    margin-top: 18px;
+    height: 41px;
+    font-size: 12px;
+    background-color: transparent;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: 0;
+}
+
+.conversion button
+{
+    margin-top:15px;
+    padding: 14px;
+    background-color: #232F3E;
+    color: #FFF;
+    font-size: 15px;
+    border: 0;
+    width: 100%;
+    border-radius: 5px;
+    outline: 0;
+}
+
+
+/************[End conversion]*************************/
