@@ -759,12 +759,13 @@ footer h5 {
     position: absolute;
     top: 15px;
     right: 15px;
+    border:none;
     background-color: #FFF;
     padding: 10px;
     border-radius: 50%;
     font-size: 20px;
     outline: 0;
-    color: #FFF;
+    color: #232F3E;
 }
 
 .porducer-me .show-button span {
@@ -1064,10 +1065,11 @@ footer h5 {
     padding: 10px;
     border-radius: 50%;
     margin-left: 3%;
+    outline: none;
 }
 
 .box .img-me:hover .toole-me {
-    bottom: 10px;
+    bottom: 0;
 }
 
 
