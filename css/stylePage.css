@@ -740,6 +740,7 @@ footer h5 {
 .porducer-me .box .img-me {
     position: relative;
     overflow: hidden;
+    height: 420px;
 }
 
 .porducer-me .box .img-me .overlay {
@@ -768,10 +769,16 @@ footer h5 {
     color: #232F3E;
 }
 
+.porducer-me .show-button h3
+{
+    font-size: 19px;
+    letter-spacing: 0.37px;
+}
+
 .porducer-me .show-button span {
     color: #a9a9a9;
     font-family: revert;
-    font-size: 17px;
+    font-size: 13px;
 }
 
 .porducer-me .show-button {
@@ -783,12 +790,11 @@ footer h5 {
     border: 0;
     color: #FFF;
     padding: 10px;
-    margin-right: 55%;
     font-size: 14px;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    width: 30%;
+    width: 100%;
 }
 
 .porducer-me .show-button button i {
@@ -800,33 +806,6 @@ footer h5 {
 
 .porducer-me .box .show-button button:hover {
     background-color: #008BFF;
-}
-
-@media (max-width: 576px) {
-    .porducer-me .show-button button {
-        width: 50%;
-        margin-right: 33%
-    }
-}
-
-@media (min-width: 768px) {
-    .porducer-me .box .img-me {
-        height: 500px
-    }
-    .porducer-me .show-button button {
-        margin-right: 27%;
-        width: 40%
-    }
-}
-
-@media (min-width: 992px) {
-    .porducer-me .box .img-me {
-        height: 420px
-    }
-    .porducer-me .show-button button {
-        margin-right: 33%;
-        width: 48%
-    }
 }
 
 .but-num {
