@@ -1372,3 +1372,22 @@ footer h5 {
 }
 
 /****************************[basketQuantityModal]***************************************************/
+/**********[bar]***********/
+.bar {
+    padding: 5px 0;
+    background-color: #E8EBEE;
+    width: 100%;
+    text-align: right
+}
+
+.btn1 {
+    background-color:#386641;
+    padding: 2px 13px 2px 29px;
+    color: #FFF;
+    transition: all .2s ease-in-out;
+}
+
+.btn1:hover
+{
+    color: #a9a9a9;
+}
