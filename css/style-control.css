@@ -922,3 +922,25 @@ table th {
 
 
 /************[End conversion]*************************/
+
+/********************[bar]*****************************/
+
+.bar {
+    padding: 13px 0;
+    background-color: #E8EBEE;
+    width: 100%;
+    text-align: right;
+    margin: 10px 0;
+}
+
+.btn1 {
+    background-color:#386641;
+    padding: 12px;
+    color: #FFF;
+    transition: all .2s ease-in-out;
+}
+
+.btn1:hover
+{
+    color: #a9a9a9 !important;
+}
